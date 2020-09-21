@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>CFT Focus Start</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="static/style.css">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <div class="container">
+        <div class="header__body">
+          <div class="header__title">
+            <p class="header__text">Тестовое задание</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="file-input">
+      <div class="container">
+        <div class="file-input__body">
+          <div class="file-input__menu">
+            <div class="file-input__menu-title">
+              <p>Выберите файл формата .mp3</p>
+            </div>
+            <form enctype="multipart/form-data" method="post" class="file-input__form">
+              <div class="file-input__btn-add"> <br>
+                <!--<input type="button" id="loadFileXml" value="Загрузите файл"
+                  onclick="document.getElementById('file-add').click();" />-->
+                <input type="file" id="file-add" accept=".mp3" multiple name="file" />
+              </div>
+              <div class="file-input__btn-send">
+                <input href="graph.html" type="submit" value="Отправить" />
+              </div>
+              <!--<div class="file-input__btn-graph">
+                <input href="graph_mp3.html" type="submit" value="Показать график" />
+              </div> -->
+              
+            </form>
+          </div>
+         
+        </div>
+         {% block graph %}
+      {% endblock %} 
+      </div>
+      
+    </div>
+
+  </div>
+  <!--<div class="main">
+      <div class="header">
+        <h2>Тестовое задание</h2>
+      </div>
+      <h1>Загрузите свой файл формата mp3</h1>
+      <form method=post enctype=multipart/form-data>
+        <input type=file name=file>
+        <input type=submit value=Upload MP3>
+      </form>
+    </div>
+  -->
+</body>
+
+</html>
+
+
+
+<!-- <img src="/home/primalex/Документы/Автотестирование/Python/CFT_test_audio_web/books_read.png"> -->
